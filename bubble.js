@@ -190,6 +190,10 @@ function imMain()//　メインルーチン
             imX[i]=Math.floor(Math.random()*imWx);
             imY[i]=imWy;
         }
+		
+		if(imX[i] > imWx - maxImageSize){
+			imX[i] = 0;
+		}
         x=imX[i];
         y=imY[i];
         // if(bw==1){
